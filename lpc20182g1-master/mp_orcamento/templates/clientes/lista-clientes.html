@@ -1,0 +1,24 @@
+<h1>Lista de orçamentos de Cliente</h1>
+    <p>Cliente:{{nome}}   email:{{ email }}</p>
+    <h3>Orçamentos</h3>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Data e hora</th>
+                <th>Custo total (R$)</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+				{% for i in lista_data %}
+				<td>{{i}}</td>
+				{%endfor%}
+				{%for x in lista_custo%}
+				<td>{{x}}</td>
+				{%endfor%}
+            </tr>
+        
+        </tbody>
+</table>
